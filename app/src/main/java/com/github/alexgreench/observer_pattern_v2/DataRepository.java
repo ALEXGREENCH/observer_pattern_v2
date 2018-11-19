@@ -29,8 +29,8 @@ class DataRepository extends Observable {
 
             @SuppressLint("SimpleDateFormat")
             SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-            String currentDateandTime = sdf.format(new Date());
-            setData(currentDateandTime);
+            String currentTime = sdf.format(new Date());
+            setData(currentTime);
 
             notifyObservers();
             getPseudoNetworkData();
